@@ -7,8 +7,8 @@ $resourcegroupName = "fabmedical-rg-" + $studentprefix
 $cosmosDBName = "fabmedical-cdb-" + $studentprefix
 $webappName = "fabmedical-web-" + $studentprefix
 $planName = "fabmedical-plan-" + $studentprefix
-$location1 = "westeurope"
-$location2 = "northeurope"
+$location1 = "eastus2"
+$location2 = "centralus"
 $appInsights = "fabmedicalai-" + $studentsuffix
 
 #First create a group
