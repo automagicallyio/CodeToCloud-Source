@@ -5,13 +5,12 @@ const request = require('request');
 
 const app = express();
 
-const appInsights = require("applicationinsights");
-appInsights.setup("ba3b75f1-ae26-4702-9300-2cd73f6e607a");
-appInsights.start();
-
 app.use(express.static(path.join(__dirname, 'dist/content-web')));
 const contentApiUrl = process.env.CONTENT_API_URL || "http://localhost:3001";
 
+const appInsights = require("applicationinsights");
+appInsights.setup("ba3b75f1-ae26-4702-9300-2cd73f6e607a");
+appInsights.start();
 
 function getSessions(cb) {
   request(contentApiUrl + '/sessions', function (err, response, body) {
