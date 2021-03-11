@@ -1,6 +1,6 @@
 param
 (
-    [string] $studentprefix = "tst"
+    [string] $studentprefix = "mxy"
 )
 
 $resourcegroupName = "fabmedical-rg-" + $studentprefix
